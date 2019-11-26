@@ -1,0 +1,129 @@
+ .carousel-inner{
+    height: 60vh;
+ } 
+ .navbar-light .navbar-toggler {
+    border:none;
+ }
+.navbar-toggler:focus, .navbar-toggler:hover {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.fixed-top {
+  border-bottom:1px solid #6b5c71;
+  background-color:$orange!important;
+}
+.navbar-brand {
+  img {
+    width:50%;
+  }
+}
+.carousel-caption {
+  top:20%;
+  bottom:0;
+  text-align: left; 
+  h2 , p {
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.79);
+  }
+}
+.nav-link {
+  font-size:14px;
+  color:$blanco!important;
+}
+.sidepanel {
+  height: 100%; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 9999; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: #ededed; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  border-left:1px solid #eee;
+  a {
+    padding: 1px 8px 0px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    -webkit-transition: all 0.2s linear;
+     -moz-transition: all 0.2s linear;
+     -o-transition: all 0.2s linear;
+     -ms-transition: all 0.2s linear;
+     transition: all 0.2s linear;
+    &:hover {
+      color: #818181;
+      text-transform:normal;
+    }
+  }
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    &:hover {
+      color: #818181;
+    }
+  }
+}
+.openbtn {
+  cursor: pointer;
+  border: none;
+  background-color:transparent;
+  color:$blanco!important;
+  position:relative;
+  &:after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background: url("../images/sheet.png");
+    background-repeat: no-repeat;
+    padding-right: 24px;
+    top: 0;
+    margin-left: 8px;
+  }
+}
+.navigator-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-bottom:1px solid #eee;
+    }
+  .header-nav {
+    z-index: 1000;
+    position: relative;
+    .topnav {
+      overflow: hidden;
+      background-color:$blanco;
+  }
+}
+.topnav a {
+  font-family:$roboto;
+  font-weight:300;
+  float: left;
+  display: block;
+  color:$gris-1;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  &:hover {
+    background-color: #ddd;
+  }
+  &.active {
+    
+  }
+}
+.boton {
+  display: none;
+}
+.topnav .icon {
+  display: none;
+} 

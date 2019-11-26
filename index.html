@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<title>Inmobiliaria</title>
+	<link rel="icon" type="image/png" href="images/favicon.png" />
+	<!-- FONTS -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" crossorigin="anonymous">
+	<!-- CSS --->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" crossorigin="anonymous">
+  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!-- JS --->               
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--div class="navigator-bar">
+	<header class="header-nav">
+		<div class="topnav" id="myTopnav">
+	  		<div class="boton">
+	  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    				<i class="fa fa-bars"></i>
+  				</a>
+	  		</div>
+  			<a href="#home" class="active">Home</a>
+  			<a href="#news">Inmobiliaria</a>
+  			<a href="#contact">Contacto</a>
+  			<a href="#about">Se parte de nosotros</a>
+		</div>
+	</header>
+</div>
+
+<div>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+
+      <div class="carousel-item active" style="background-image: url('https://source.unsplash.com/LAaSoL0LrYs/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">First Slide</h2>
+          <p class="lead">This is a description for the first slide.</p>
+        </div>
+      </div>
+
+
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/bF2vsubyHcQ/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Second Slide</h2>
+          <p class="lead">This is a description for the second slide.</p>
+        </div>
+      </div>
+
+
+      <div class="carousel-item" style="background-image: url('https://source.unsplash.com/szFUQoyvrxM/1920x1080')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Third Slide</h2>
+          <p class="lead">This is a description for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</div-->
+
+
+
+
+
+
+
+
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars"></i>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Propiedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Publica</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Ayuda</a>
+        </li>
+        <li class="nav-item">
+        	<a class="openbtn nav-link" onclick="openNav()">Buscador</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div id="mySidepanel" class="sidepanel">
+  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  	<div class="col-12">
+		<p class="medium">
+			Encuentra lo que buscas
+		</p>
+	</div>
+  	<div class="form-group col-lg-12">
+		<select class="form-control">
+			<option selected="">País</option>
+			<option>Chile</option>
+			<option>Argentina</option>
+		</select>
+	</div>
+	<div class="form-group col-lg-12">
+		<select class="form-control">
+			<option selected="">Ciudad</option>
+			<option>Santiago</option>
+			<option>Rancagua</option>
+			<option>Concepción</option>
+			<option>Valdivia</option>
+		</select>
+	</div>
+	<div class="form-group col-lg-12">
+		<select class="form-control">
+			<option selected="">Formato</option>
+			<option>Home Estudio</option>
+			<option>2 Habitaciones</option>
+			<option>1 Habitación</option>
+		</select>
+	</div>
+	<div class="form-group col-lg-12">
+		<select class="form-control">
+			<option selected="">Estacionamiento</option>
+			<option>Sí</option>
+			<option>No</option>
+		</select>
+	</div>
+	<div class="form-group col-lg-12">
+		<select class="form-control">
+			<option selected="">MT Construidos</option>
+			<option>1.200 MT</option>
+			<option>600 MT</option>
+		</select>
+	</div>
+	<div class="form-group col-12">
+		<button type="submit" class="button">Buscar</button>
+	</div>
+</div>
+
+<header>
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('images/header/header-1.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          	<h2 class="display-4">Apartamento 4 piezas</h2>
+			<p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
+			<div>
+				<a class="button" href="#" title="">Ver propiedad</a>
+			</div>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('images/header/header-2.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+           <h2 class="display-4">Condominio Casas Pareadas</h2>
+           <p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
+           <div>
+			 <a class="button" href="#" title="">Ver propiedad</a>
+		   </div>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('images/header/header-3.jpg')">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 class="display-4">Apartamentos Home Estudio</h2>
+          <p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
+          <div>
+				<a class="button" href="#" title="">Ver propiedad</a>
+			</div>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+  </div>
+</header>
+
+<!--section class="py-5">
+	<div class="col-12">
+		<div class="row wrapper-padding">
+			<div class="col-12">
+				<p class="medium">
+					Encuentra la casa de tus sueños.
+				</p>
+			</div>
+			<div class="col-12 form-contact">
+				<form action="" class="form-contain">
+					<div class="row">
+						<div class="form-group col-lg-4">
+							<select class="form-control">
+								<option selected="">País</option>
+								<option>Chile</option>
+								<option>Argentina</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-4">
+							<select class="form-control">
+								<option selected="">Ciudad</option>
+								<option>Santiago</option>
+								<option>Rancagua</option>
+								<option>Concepción</option>
+								<option>Valdivia</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-4">
+							<select class="form-control">
+								<option selected="">Formato</option>
+								<option>Home Estudio</option>
+								<option>2 Habitaciones</option>
+								<option>1 Habitación</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-4">
+							<select class="form-control">
+								<option selected="">Estacionamiento</option>
+								<option>Sí</option>
+								<option>No</option>
+							</select>
+						</div>
+						<div class="form-group col-lg-4">
+							<select class="form-control">
+								<option selected="">MT Construidos</option>
+								<option>1.200 MT</option>
+								<option>600 MT</option>
+							</select>
+						</div>
+						<div class="form-group col-12">
+							<button type="submit" class="button">Buscar</button>
+						</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+</section-->
+
+<section class="publicidad">
+	<div class="col-12 py-5">
+		<div class="col-12 text-center">
+			<h3>Destacados</h3>
+		</div>
+		<div class="row wrapper-padding">
+			<div class="col-lg-6">
+				<img src="images/publi-2.jpg">
+			</div>
+			<div class="col-lg-6">
+				<img src="images/publi-3.jpg">
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+		<div class="container-fluid wrapper-padding contenidoWrapperThree">
+			<div class="row home-product">
+				<div class="col-12 text-center">
+					<h3>Propiedades principales</h3>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="view view-first">
+						<div class="boxImgInterior">
+	                    	<img class="imgInterior" src="images/icon-6.png" alt="">
+	                    	<h3>Edificio San Miguel</h3>
+	                    </div>
+	                    <img class="imgTransition" src="images/productos/image-1.jpg" />
+	                    <div class="mask">
+	                    	<img src="images/icon-6.png" alt="">
+	                        <h4>Desde 2.000 UF</h4>
+	                        <p>Avenida lo vial 10345, esquina Gran Avenida</p>
+	                        <a href="#" class="info">Ver Propiedad</a>
+	                    </div>
+	                </div>  
+				</div>
+                <div class="col-lg-3 col-12">
+					<div class="view view-first">
+						<div class="boxImgInterior">
+	                    	<img class="imgInterior" src="images/icon-7.png" alt="">
+	                    	<h3>Edificio La Florida</h3>
+	                    </div>
+	                    <img class="imgTransition" src="images/productos/image-2.jpg" />
+	                    <div class="mask">
+	                    	<img src="images/icon-7.png" alt="">
+	                        <h4>Desde 5.000 UF</h4>
+	                        <p>San José de la Estrella con Vicuña Mackenna</p>
+	                        <a href="#" class="info">Ver Propiedad</a>
+	                    </div>
+	                </div>  
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="view view-first">
+						<div class="boxImgInterior">
+	                    	<img class="imgInterior" src="images/icon-8.png" alt="">
+	                    	<h3>Condominio Vitacura</h3>
+	                    </div>
+	                    <img class="imgTransition" src="images/productos/image-3.jpg" />
+	                    <div class="mask">
+	                    	<img src="images/icon-8.png" alt="">
+	                        <h4>Desde 10.000 UF</h4>
+	                        <p>Avenida Vitacura con Isidora Goynechea</p>
+	                        <a href="#" class="info">Ver Propiedad</a>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-lg-3 col-12">
+					<div class="view view-first">
+						<div class="boxImgInterior">
+		                    <img class="imgInterior" src="images/icon-8.png" alt="">
+		                    <h3>Condomonio Puente Alto</h3>
+		                </div>
+		                <img class="imgTransition" src="images/productos/image-4.jpg" />
+		                <div class="mask">
+		                    <img src="images/icon-8.png" alt="">
+		                    <h4>Desde 8.000 UF</h4>
+		                    <p>Avenida San carlos con Nonato Cox</p>
+		                    <a href="#" class="info">Ver Propiedad</a>
+		                </div>
+	                </div>
+	            </div>
+			</div>
+			<div class="mt-4 text-center">
+				<a class="button" href="#" title="">Todas las propiedades</a>
+			</div>
+		</div>
+	</section>
+
+<section class="container-fluid wrapper-padding py-5">
+	<div class="row">
+		<div class="col-12 text-center noticias">
+			<h3>Noticias</h3>
+		</div>
+		<div class="col-lg-9">
+			<div class="container-fluid row">
+				<div class="col-12">
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="row noticiasDestacadas">
+								<div class="col-sm-4 col-lg-4">
+									<img src="images/img-inside.jpg">
+								</div>
+								<div class="col-sm-8 col-lg-8 informacion-noticia">
+									<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+									<div class="boton-noticia">
+										<a class="button" href="#" title="">Ver noticia</a>
+									</div>
+								</div>
+							</div>
+							<div class="row noticiasDestacadas">
+								<div class="col-sm-4 col-lg-4">
+									<img src="images/img-inside.jpg">
+								</div>
+								<div class="col-sm-8 col-lg-8 informacion-noticia">
+									<h4>Los 5 factores que debes considerar a la hora de invertir en un departamento</h4>
+									<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+									<div class="boton-noticia">
+										<a class="button" href="#" title="">Ver noticia</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-3 publicidad">
+			<img src="images/publi-1.jpg">
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="map">
+		<div class="col-12 text-center">
+			<h3>Propiedades principales</h3>
+		</div>
+		<div>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.270170069006!2d-70.62836078521762!3d-33.442267080776325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c57f5dbfaed5%3A0x2197b37193ba6445!2sAv.%20Italia%20812%2C%20Providencia%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1574041594756!5m2!1ses-419!2scl" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		</div>
+	</div>
+</section>
+
+<footer>
+	<div class="row container-fluid wrapper-padding footer">
+		<div class="col-lg-4">
+			<ul class="direccion">
+		 		<li>Av. Italia 1279, Providencia</li>
+		 		<li><strong>Correo:</strong> <a href="mailto:findmyhome@correo.cl">findmyhome@correo.cl</a></li>
+		 		<li><strong>Teléfonos:</strong> +569 9 1234 5678 / +569 9 1234 5678</li>
+		 		<li><strong>Celular:</strong> +569 9 1234 5678</li>               
+		 	</ul>
+		</div>
+		<div class="col-lg-4 propiedades-footer">
+			<h3>Tipo de Propiedades</h3>
+			<ul>
+				<li><a href="#">Casas</a></li>
+				<li><a href="#">Condominios</a></li>
+				<li><a href="#">Departamentos</a></li>
+				<li><a href="#">Arriendos</a></li>
+				<li><a href="#">Home Estudios</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-4">
+			 <div class="footer-img">
+				<img src="images/logo.png">
+			</div>
+		</div>
+	</div>
+	<div class="row container-fluid wrapper-padding">
+		<nav class="col-12 nav-footer">
+			<a href="#">¿Quieres Publicar?</a>
+			<a href="#">¿Buscas Ayuda?</a>
+			<a href="#">Términos y condiciones</a>
+		</nav>
+	</div>
+</footer>
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>
