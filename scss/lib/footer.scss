@@ -1,6 +1,8 @@
 footer {
+  background-color:$gris-3;
   padding-top:50px;
   padding-bottom:30px;
+  color:$blanco;
   .footer-img {
     margin-bottom: 30px;
   }
@@ -16,13 +18,14 @@ footer {
       margin-bottom: 0;
       padding-left: 0;
       font-size: 14px;
-      color: rgba(43, 44, 71, 1);
+      color:$blanco;
     }
     li {
       font-family:$roboto;
       font-weight: 300;
       position: relative;
       line-height: 25px;
+      color:$blanco;
     }
   }
   .propiedades-footer {
@@ -31,13 +34,13 @@ footer {
       font-weight:700;
       margin-bottom: 10px;
       font-size: 18px;
-      color: rgba(43, 44, 71, 1);
+      color: $blanco;
     }
     li {
       a {
         font-weight:300;
         font-size: 14px;
-        color: rgba(43, 44, 71, 1);
+        color:$blanco;
       }
     }
   }
@@ -50,7 +53,7 @@ footer {
       font-weight:500;
       margin-bottom: 10px;
       font-size: 12px;
-      color: #000;
+      color: $blanco;
       padding: 0 8px;
       &:first-of-type {
         padding-left: 0;
