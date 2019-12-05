@@ -19,202 +19,187 @@
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <div class="container">
-    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
-    <div class="collapse navbar-collapse" id="navbarResponsive">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Propiedades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Publica</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Ayuda</a>
-        </li>
-        <li class="nav-item">
-        	<a class="openbtn nav-link" onclick="openNav()">Buscador</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-
-<div id="mySidepanel" class="sidepanel">
-  	<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  	<div class="col-12">
-		<p class="medium">
-			Encuentra lo que buscas
-		</p>
-	</div>
-  	<div class="form-group col-lg-12">
-		<select class="form-control">
-			<option selected="">País</option>
-			<option>Chile</option>
-			<option>Argentina</option>
-		</select>
-	</div>
-	<div class="form-group col-lg-12">
-		<select class="form-control">
-			<option selected="">Ciudad</option>
-			<option>Santiago</option>
-			<option>Rancagua</option>
-			<option>Concepción</option>
-			<option>Valdivia</option>
-		</select>
-	</div>
-	<div class="form-group col-lg-12">
-		<select class="form-control">
-			<option selected="">Formato</option>
-			<option>Home Estudio</option>
-			<option>2 Habitaciones</option>
-			<option>1 Habitación</option>
-		</select>
-	</div>
-	<div class="form-group col-lg-12">
-		<select class="form-control">
-			<option selected="">Estacionamiento</option>
-			<option>Sí</option>
-			<option>No</option>
-		</select>
-	</div>
-	<div class="form-group col-lg-12">
-		<select class="form-control">
-			<option selected="">MT Construidos</option>
-			<option>1.200 MT</option>
-			<option>600 MT</option>
-		</select>
-	</div>
-	<div class="form-group col-12">
-		<button type="submit" class="button">Buscar</button>
+<!-- Navegador -->
+<div class="content fixed-top">
+	<div class="container-fluid wrapper-padding nav-menu-top">
+		<div class="logo-top">
+			<a class="" href="#"><img class="logo-top-img" src="images/logo-top.png"></a>
+		</div>
+		<a class="d-lg-none" onclick="abrirNav()">open</a>
+	 	<ul class="exo-menu">
+			<li><a class="active" href="#">Inicio</a></li>
+			<li class="mega-drop-down"><a href="#">Propiedades</a>
+				<div class="animated fadeIn mega-menu">
+					<div class="mega-menu-wrap">
+						<div class="row">
+							<div class="col-md-2">
+								<h4 class="row mega-title">Casas</h4>
+								<ul class="stander">
+									<li><a href="#">Opción 1</a></li>
+									<li><a href="#">Opción 2</a></li>
+									<li><a href="#">Opción 3</a></li>
+									<li><a href="#">Opción 4</a></li>
+									<li><a href="#">Opción 5</a></li>
+									<li><a href="#">Opción 6</a></li>
+									<li><a class="button" href="#">Ver más</a></li>
+								</ul>
+							</div>
+							<div class="col-md-2">
+								<h4 class="row mega-title">Departamentos</h4>
+								<ul class="stander">
+									<li><a href="#">Opción 1</a></li>
+									<li><a href="#">Opción 2</a></li>
+									<li><a href="#">Opción 3</a></li>
+									<li><a href="#">Opción 4</a></li>
+									<li><a class="button" href="#">Ver más</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<h4 class="row mega-title">Condominios</h4>
+								<ul class="stander">
+									<li><a href="#">Opción 1</a></li>
+									<li><a href="#">Opción 2</a></li>
+									<li><a href="#">Opción 3</a></li>
+									<li><a href="#">Opción 4</a></li>
+									<li><a href="#">Opción 5</a></li>
+									<li><a class="button" href="#">Ver más</a></li>
+								</ul>
+							</div>
+							<div class="col-md-3">
+								<h4 class="row mega-title">Parcelas</h4>
+								<ul class="stander">
+									<li><a href="#">Opción 1</a></li>
+									<li><a href="#">Opción 2</a></li>
+									<li><a href="#">Opción 3</a></li>
+									<li><a href="#">Opción 4</a></li>
+									<li><a href="#">Opción 5</a></li>
+									<li><a href="#">Opción 6</a></li>
+									<li><a href="#">Opción 74</a></li>
+									<li><a href="#">Opción 8</a></li>
+									<li><a href="#">Opción 9</a></li>
+									<li><a class="button" href="#">Ver más</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>	
+				</div>
+			</li>
+			<li class="margin-right-menu"><a href="#">Ayuda</a></li>
+			<li><a href="#">Servicios</a></li>
+			<li class="show-no-cliente no-cliente"><a onclick="smoothscroll()" href="#contacto">Buscador</a></li>
+		</ul>
 	</div>
 </div>
 
-<header>
-  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner" role="listbox">
-      <!-- Slide One - Set the background image for this slide in the line below -->
-      <div class="carousel-item active" style="background-image: url('images/header/header-1.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          	<h2 class="display-4">Apartamento 4 piezas</h2>
-			<p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
-			<div>
-				<a class="button" href="#" title="">Ver propiedad</a>
-			</div>
-        </div>
-      </div>
-      <!-- Slide Two - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('images/header/header-2.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-           <h2 class="display-4">Condominio Casas Pareadas</h2>
-           <p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
-           <div>
-			 <a class="button" href="#" title="">Ver propiedad</a>
-		   </div>
-        </div>
-      </div>
-      <!-- Slide Three - Set the background image for this slide in the line below -->
-      <div class="carousel-item" style="background-image: url('images/header/header-3.jpg')">
-        <div class="carousel-caption d-none d-md-block">
-          <h2 class="display-4">Apartamentos Home Estudio</h2>
-          <p>Proyectos constructivos cuyo espacio contempla una aplicación.</p>
-          <div>
-				<a class="button" href="#" title="">Ver propiedad</a>
-			</div>
-        </div>
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-  </div>
-</header>
-
-<section class="container-fluid wrapper-padding py-5">
+<section class="container-fluid wrapper-padding py-5" style="margin-top: 100px;">
 	<div class="row">
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-inside.jpg" class="vinculoNoticia">
+		<div class="col-lg-9">
+			<div class="row">
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Propiedades</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-inside.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
 				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Departamento</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-mob.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
 				</div>
-			</a>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Departamento</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-inside.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Departamento</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-mob.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Departamento</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-inside.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Departamento</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-mob.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Propiedades</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-inside.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 blockNoticia">
+					<div class="tag-small">Propiedades</div>
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-inside.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+			</div>
 		</div>
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-mob.jpg" class="vinculoNoticia">
-				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-				</div>
-			</a>
-		</div>
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-inside.jpg" class="vinculoNoticia">
-				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-				</div>
-			</a>
-		</div>
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-mob.jpg" class="vinculoNoticia">
-				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-				</div>
-			</a>
-		</div>
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-inside.jpg" class="vinculoNoticia">
-				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-				</div>
-			</a>
-		</div>
-		<div class="col-lg-3 blockNoticia">
-			<a href="">
-				<div class="imagenNoticia">
-					<img src="images/img-mob.jpg" class="vinculoNoticia">
-				</div>
-				<div class="preNoticia">
-					<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-				</div>
-			</a>
+		<div class="col-lg-3 publicidad">
+			<div class="publicidad">
+				<img src="images/publi-1.jpg">
+			</div>
+			<div class="publicidad mt-3">
+				<img src="images/publi-4.jpg">
+			</div>
 		</div>
 	</div>
 </section>
