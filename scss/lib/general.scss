@@ -79,10 +79,37 @@ a.button:before, button.button:before {
     -ms-transform: scaleX(1);
     transform: scaleX(1); 
 }
+.tag-small {
+    position: absolute;
+    color:$blanco;
+    background-color:$orange-1;
+    z-index: 2;
+    top: 20px;
+    left: 0px;
+    padding: 8px 20px;
+    font-size:16px;
+    font-family:$roboto;
+    font-weight:500;
+    box-shadow: rgba(0, 0, 0, 0.12) 5px 4px 13px  !important;
+}
 .noticiasDestacadas {
   border:1px solid #dedede;
   margin-bottom:20px;
   background-color:$gris-3;
+  position:relative;
+  .tag {
+    position: absolute;
+    color:$blanco;
+    background-color:$orange-1;
+    z-index: 2;
+    top: 20px;
+    left: -20px;
+    padding: 8px 20px;
+    font-size:16px;
+    font-family:$roboto;
+    font-weight:500;
+    box-shadow: rgba(0, 0, 0, 0.12) 5px 4px 13px  !important;
+  }
   .col-lg-4 , .col-sm-4 {
     padding:0;
   }
@@ -389,6 +416,8 @@ p {
      -o-transition: all 0.2s ease-in-out;
      -ms-transition: all 0.2s ease-in-out;
      transition: all 0.2s ease-in-out;
+     text-decoration:none;
+     color:$orange-1;
   }
   .view-first:hover .mask {
      -ms-filter: "progid: DXImageTransform.Microsoft.Alpha(Opacity=100)";
@@ -571,7 +600,7 @@ p {
 }
 
 .product-info {
-  span {
+  dl {
     color:$orange;
     font-family:$roboto;
     font-size:14px;
@@ -585,7 +614,7 @@ p {
     font-family:$roboto;
     font-size: 34px;
     font-weight: 900;
-    margin-bottom:35px;
+    margin-bottom:5px;
   }
   .cotizadorCount {
     span {
@@ -607,7 +636,6 @@ p {
   .tablagen{
     display: table;
     width: 100%;
-    margin-top:50px;
   }
   .fila{
     display: table-row;
@@ -616,8 +644,13 @@ p {
     display: table-cell;
     padding: 10px 0;
     width: 50%;
-    border-top:1px solid #ccc;
-    font-size:12px;
+    border-top:1px solid #eee;
+    font-size:12px; 
+    i {
+      font-size:18px;
+      color:$orange-1;
+      margin-right:12px;
+    }
   }
 }
 .textoinformacion {
@@ -656,7 +689,6 @@ p {
     font-size:1rem;
     font-family:$roboto;
     font-weight:900;
-    text-decoration:underline;
 }
 .view-fifth img {
    -webkit-transition: all 0.3s ease-in-out;
@@ -779,3 +811,115 @@ p {
     font-weight:300;
   }
 }
+
+
+h2.medium {
+  font-size:20px;
+  font-weight:300;
+  margin-bottom:22px;
+  .orange {
+    color:$orange;
+    font-weight:500;
+  }
+}
+.form-group {
+  position:relative;
+}
+.text-seleccion {
+    font-size: 12px !important;
+    font-weight: 800 !important;
+    letter-spacing: 1px !important;
+    margin-bottom: 8px !important;
+}
+.formulario-busqueda {
+  position: absolute;
+  top: 100px;
+  right: 40px;
+  z-index:9;
+  width:450px;
+  border-radius: 4px !important;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 16px 40px !important;
+}
+.seleccion {
+  position:relative;
+}
+.boton-seleccion , .seleccion-comuna {
+  background:
+  rgba(0, 0, 0, 0) none repeat scroll 0% 0% !important;
+  position: relative !important;
+  text-align: left !important;
+  border: 1px solid rgb(235, 235, 235) !important;
+  border-radius: 3px !important;
+  padding: 8px 11px 11px !important;
+  font-size: 16px !important;
+  font-weight: 400 !important;
+  line-height: normal !important;
+  display: block !important;
+  width: 100% !important;
+  height: 48px !important;
+  color: rgb(118, 118, 118) !important;
+  outline:none;
+  box-shadow:none;
+  &:focus , &:visited , &:link , &:hover{ 
+    border-color: none;
+    box-shadow:none;
+    outline:none;
+  }
+}
+.seleccion-flecha{
+  position: absolute !important;
+  right: 11px !important;
+  top: 0px !important;
+  bottom: 0px !important;
+  margin: auto !important;
+  pointer-events: none !important;
+  display: block !important;
+  height: 12px !important;
+  width: 12px !important;
+}
+.seleccion-tabs {
+  position: absolute !important;
+  background: rgb(255, 255, 255) none repeat scroll 0% 0% !important;
+  z-index: 3000 !important;
+  min-width: 280px !important;
+  border: 1px solid
+  rgb(235, 235, 235) !important;
+  border-radius: 3px !important;
+  text-align: left !important;
+  line-height: 1em !important;
+  font-size: 14px !important;
+  box-shadow:
+  rgba(26, 26, 29, 0.3) 0px 15px 46px -10px !important;
+  width: 100% !important;
+  left: 0px !important;
+  a {
+    color:$gris-1;
+    font-size:14px;
+    display:block;
+    &:hover {
+      background-color:#eee;
+    }
+  }
+}
+.seleccion-item {
+  padding: 16px 24px;
+}
+
+
+.hide {
+    display: none;
+}
+.active {
+    display: block;
+}
+.contacto {
+    background-color: #fff;
+    color:#203262;
+    border-radius: 24px;
+    padding: 2rem 2.5rem;
+    max-height: 600px;
+    transition: max-height 0.3s ease-out;
+}
+.contacto .title {
+    font-size: 1.8rem;
+  }
