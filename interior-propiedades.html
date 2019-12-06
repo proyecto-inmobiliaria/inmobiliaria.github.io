@@ -14,8 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!-- JS --->               
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="js/simplegallery.min.js"></script>	
 </head>
 <body>
@@ -93,7 +93,6 @@
 <header>
 
 </header>
-
 	<section class="container-fluid wrapper-padding py-5">
 		<div class="" style="margin-top: :30px;">
       		<div class="row my-5">
@@ -178,7 +177,14 @@
 						  	<input type="radio" name="tabs" id="tabtwo">
 						  	<label for="tabtwo">Interiores</label>
 						  		<div class="tab contenido-tab">
-    								<img src="images/Interiores/int-1.jpg">
+    								<div class="row interiores-mapa">
+    									<div class="col-6">
+    										<a href="#myModal" role="button" data-toggle="modal"><img src="images/interiores/int-1.jpg"></a>
+    									</div>
+    									<div class="col-6">
+    										<a href="#myModal2" role="button" data-toggle="modal"><img src="images/interiores/int-2.png"></a>
+    									</div>
+    								</div>
   								</div>
   							<input type="radio" name="tabs" id="tabthree">
   							<label for="tabthree">videos</label>
@@ -189,7 +195,7 @@
 						  	<label for="tabfour">Servicios cercanos</label>
 						  		<div class="tab contenido-tab">
     								<div class="lugares">
-									  	<button class="tablinks" onclick="openCity(event, 'supermercados')">Supermercados</button>
+									  	<button class="tablinks active" onclick="openCity(event, 'supermercados')">Supermercados</button>
 									  	<button class="tablinks" onclick="openCity(event, 'metro')">Metro</button>
 									  	<button class="tablinks" onclick="openCity(event, 'farmacias')">Farmacias</button>
 									</div>
@@ -247,7 +253,43 @@
       		</div>
     	</div>
 	</section>
-
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+   
+		<div class="wrapped">
+			<div class="modal-zoom-large-photo-wrap">
+				<div class="absolute">
+					<a id="modal-zoom-photo" class="zoom-in-cursor" href="#"><img class="margin-bottom img-responsive" src="images/Interiores/int-1.jpg"></a>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
+<div id="myModal2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+      </div>
+      <div class="modal-body">
+		<div class="wrapped">
+			<div class="modal-zoom-large-photo-wrap">
+				<div class="absolute">
+					<a id="modal-zoom-photo" class="zoom-in-cursor" href="#"><img class="margin-bottom img-responsive" src="images/Interiores/int-2.png"></a>
+				</div>
+			</div>
+		</div>
+</div>
+</div>
+</div>
+</div>
 <section>
 	<div class="map">
 		<div class="col-12 text-center">
