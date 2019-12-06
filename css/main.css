@@ -1146,10 +1146,10 @@ p.medium {
   margin-top: 8px; }
 
 .product-info h3 {
-  color: #1e53de;
+  color: #010101;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 900;
   margin-bottom: 5px; }
 
 .product-info .cotizadorCount span {
@@ -1624,6 +1624,12 @@ h2.medium {
   width: 70%;
   border-left: none;
   height: 300px; }
+  .tabcontent h3 {
+    color: #1e53de;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px; }
   .tabcontent p {
     color: #010101;
     font-family: "Roboto", sans-serif;
