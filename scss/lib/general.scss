@@ -610,10 +610,10 @@ p {
     margin-top: 8px;
   }
   h3 {
-    color:$black;
+    color:$azul-1;
     font-family:$roboto;
-    font-size: 34px;
-    font-weight: 900;
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom:5px;
   }
   .cotizadorCount {
@@ -809,17 +809,22 @@ p {
     font-size:14px;
     color:$gris-3;
     font-weight:300;
+    margin-top:30px;
   }
 }
 
 
 h2.medium {
-  font-size:20px;
-  font-weight:300;
-  margin-bottom:22px;
+  font-size: 30px !important;
+  line-height: 36px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  margin: 0px !important;
+  padding: 0px !important;
   .orange {
     color:$orange;
-    font-weight:500;
+    font-weight:300;
   }
 }
 .form-group {
@@ -842,6 +847,17 @@ h2.medium {
 }
 .seleccion {
   position:relative;
+  span {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+    margin-top:12px;
+    display:block;
+    a {
+      text-decoration:underline;
+    }
+  }
 }
 .boton-seleccion , .seleccion-comuna {
   background:
@@ -915,7 +931,7 @@ h2.medium {
 .contacto {
     background-color: #fff;
     color:#203262;
-    border-radius: 24px;
+    border-radius: 4px;
     padding: 2rem 2.5rem;
     max-height: 600px;
     transition: max-height 0.3s ease-out;

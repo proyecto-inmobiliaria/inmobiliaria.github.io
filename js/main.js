@@ -101,3 +101,50 @@ function scroll_header(scroll){
       $('.fixed-top').css('background', 'rgba(0, 0, 0, 0.6)');
   }
 }*/
+
+/* IMAGEN MODAL */
+
+$(document).ready(function(){
+        var current = {x: 0, y: 0, zoom: 1};
+  $(document).on("click","#modal-zoom-photo",function(e){
+    
+    if(current.zoom > 1){
+      current = {x: 0, y: 0, zoom: 1};
+      $(this).removeClass().addClass("zoom-in-cursor");
+    }
+    else{
+      $(this).removeClass().addClass("zoom-out-cursor");
+       var coef = e.shiftKey || e.ctrlKey ? 0.5 : 2,
+        delm = document.documentElement,
+        oz = current.zoom,
+        nz = current.zoom * coef,
+        sx = delm.scrollLeft,
+        sy = delm.scrollTop,
+        ox = 50 + 21,
+        oy = 50 + 22,
+        mx = e.clientX - ox + sx,
+        my = e.clientY - oy + sy,
+        ix = (mx - current.x) / oz,
+        iy = (my - current.y) / oz,
+        nx = ix * nz,
+        ny = iy * nz,
+        cx = (ix + (mx - ix) - nx),
+        cy = (iy + (my - iy) - ny)
+      ;
+        current.zoom = nz;
+        current.x = cx;
+        current.y = cy;
+    }
+      
+    $(".modal-zoom-large-photo-wrap").css({
+      '-webkit-transform' : 'translate('+current.x+'px, '+current.y+'px) scale(' + current.zoom + ')',
+      '-moz-transform'    : 'translate('+current.x+'px, '+current.y+'px) scale(' + current.zoom + ')',
+      '-ms-transform'     : 'translate('+current.x+'px, '+current.y+'px) scale(' + current.zoom + ')',
+      '-o-transform'      : 'translate('+current.x+'px, '+current.y+'px) scale(' + current.zoom + ')',
+      'transform'         : 'translate('+current.x+'px, '+current.y+'px) scale(' + current.zoom + ')'
+    });
+    return false;
+  });
+      
+      
+    });

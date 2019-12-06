@@ -44,10 +44,12 @@
       -moz-transition: color 0.2s linear, background 0.2s linear;
       -o-transition: color 0.2s linear, background 0.2s linear;
       transition: color 0.2s linear, background 0.2s linear;
+      outline: none;
     }
-     > li > a.active, > li > a:hover, li.drop-down ul > li > a:hover{
+     > li > a.active, > li > a:hover, li.drop-down ul > li > a:hover ,  li.drop-down ul > li > a:visited ,  li.drop-down ul > li > a:link{
       background:$azul-2;
       color:#fff;
+      outline: none;
     }
   }
 }
