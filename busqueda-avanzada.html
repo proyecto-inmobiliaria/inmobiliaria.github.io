@@ -19,13 +19,26 @@
 </head>
 <body>
 
-<!-- Navegador -->
+<!-- NAVEGADOR --->
+<div id="menu-mobile-izquierda" class="nav-lateral">
+	<a href="javascript:void(0)" class="boton-cerrado" onclick="cerrarNav()">&times;</a>
+	<a href="#">Propiedades</a>
+	<a href="#">Servicios</a>
+	<a href="#">Ayuda</a>
+	<a href="#">otros</a>
+</div>
+
 <div class="content fixed-top">
 	<div class="container-fluid wrapper-padding nav-menu-top">
 		<div class="logo-top">
 			<a class="" href="#"><img class="logo-top-img" src="images/logo-top.png"></a>
 		</div>
-		<a class="d-lg-none" onclick="abrirNav()">open</a>
+		<a class="d-lg-none burger-icon" onclick="abrirNav()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a class="d-lg-none buscador-icon show-no-cliente no-cliente" onclick="smoothscroll2()">
+			<i class="fa fa-search"></i>
+		</a>
 	 	<ul class="exo-menu">
 			<li><a class="active" href="#">Inicio</a></li>
 			<li class="mega-drop-down"><a href="#">Propiedades</a>
@@ -90,16 +103,209 @@
 		</ul>
 	</div>
 </div>
+<!-- FIN NAVEGADOR --->
+<!-- BUSCADOR -->
+<div id="buscador.nodal" class="formulario-busqueda">
+	<div class="contacto hide">
+		<div id="clientes">
+			<div class="no-cliente-dos hide">
+				<h2 class="medium">Encuentra la <strong class="orange">casa de tus sueños</strong> </h2>
+				<form id="buscador">
+					<div class="form-group">
+						<div class="seleccion">
+							<button id="picker-1" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+								<div class="placeholder-form">TIPO DE PROPIEDAD</div>
+								<div class="seleccion-flecha">
+									<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+								</div>
+							</button>
+						</div>
+						<div hidden="" class="selection-1">
+							<div class="seleccion-tabs">
+								<div>
+									<a href="#" class="seleccion-item">
+										Santiago
+									</a>
+								</div>
+								<div>
+									<a href="#" class="seleccion-item">
+										Rancagua
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group seleccion">
+						<input placeholder="LUGAR" class="form-control seleccion-comuna placeholder-form" type="text" name="comuna" id="comuna" required style="font-size: 13px !important;"> 
+					</div>
+					<div class="form-group seleccion">
+						<span><a href="busqueda-avanzada.html">Busqueda Avanzada</a></span>
+					</div>
+					<div class="form-group no-cliente text-right button">
+						<button type="submit" class="btn btn-green button" href="#contacto" id="inscribir"  data-loading-text="Enviando...">Buscar</button>
+					</div>
+				</form>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- FIN DEL BUSCADOR -->
 
 <section class="container-fluid wrapper-padding py-5" style="margin-top:80px;">
 	<div class="row">
-		
+		<div class="col-12 text-center avanzada" >
+			<h3>Propiedades Avanzada</h3>
+		</div>
+		<div class="form-group col-12 cols-sm 12 col-md-6 col-lg-4">
+			<div class="seleccion">
+				<span>CIUDAD</span>
+				<button id="picker-2" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+					<div class="seleccion-flecha">
+						<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+					</div>
+				</button>
+			</div>
+			<div hidden="" class="selection-2">
+				<div class="seleccion-tabs">
+					<div>
+						<a href="#" class="seleccion-item">
+							Santiago
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Concepcion
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Temuco
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group col-12 cols-sm 12 col-md-6 col-lg-4">
+			<div class="seleccion">
+				<span>Formato</span>
+				<button id="picker-3" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+					<div class="seleccion-flecha">
+						<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+					</div>
+				</button>
+			</div>
+			<div hidden="" class="selection-3">
+				<div class="seleccion-tabs">
+					<div>
+						<a href="#" class="seleccion-item">
+							Venta
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Arriendo
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Arriendo Temporada
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group col-12 cols-sm 12 col-md-6 col-lg-4">
+			<div class="seleccion">
+				<span>TIPO</span>
+				<button id="picker-4" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+					<div class="seleccion-flecha">
+						<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+					</div>
+				</button>
+			</div>
+			<div hidden="" class="selection-4">
+				<div class="seleccion-tabs">
+					<div>
+						<a href="#" class="seleccion-item">
+							Casa
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Departamento
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Oficina
+						</a>
+					</div><div>
+						<a href="#" class="seleccion-item">
+							Paracela
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							Sitios
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group col-12 cols-sm 12 col-md-6 col-lg-4">
+			<div class="seleccion">
+				<span>Estacionamientos</span>
+				<button id="picker-5" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+					<div class="seleccion-flecha">
+						<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+					</div>
+				</button>
+			</div>
+			<div hidden="" class="selection-5">
+				<div class="seleccion-tabs">
+					<div>
+						<a href="#" class="seleccion-item">
+							Si 
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							No
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="form-group col-12 cols-sm 12 col-md-6 col-lg-4">
+			<div class="seleccion">
+				<span>MTS Construidos</span>
+				<button id="picker-6" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+					<div class="seleccion-flecha">
+						<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+					</div>
+				</button>
+			</div>
+			<div hidden="" class="selection-6">
+				<div class="seleccion-tabs">
+					<div>
+						<a href="#" class="seleccion-item">
+							23.456 
+						</a>
+					</div>
+					<div>
+						<a href="#" class="seleccion-item">
+							2.789
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 </section>
 
 <footer>
 	<div class="row container-fluid wrapper-padding footer">
-		<div class="col-lg-4">
+		<div class="col-12 col-md-4 col-lg-4">
 			<ul class="direccion">
 		 		<li>Av. Italia 1279, Providencia</li>
 		 		<li><strong>Correo:</strong> <a href="mailto:findmyhome@correo.cl">findmyhome@correo.cl</a></li>
@@ -107,7 +313,7 @@
 		 		<li><strong>Celular:</strong> +569 9 1234 5678</li>               
 		 	</ul>
 		</div>
-		<div class="col-lg-4 propiedades-footer">
+		<div class="col-12 col-md-4 col-lg-4 propiedades-footer">
 			<h3>Tipo de Propiedades</h3>
 			<ul>
 				<li><a href="#">Casas</a></li>
@@ -117,7 +323,7 @@
 				<li><a href="#">Home Estudios</a></li>
 			</ul>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-12 col-md-4 col-lg-4">
 			 <div class="footer-img">
 				<img src="images/logo.png">
 			</div>
@@ -132,5 +338,95 @@
 	</div>
 </footer>
 <script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+	(function () {
+	  $(document).ready(function () {
+	    var $button2, $tooltip2
+	    $button2 = $('#picker-2')
+	    $tooltip2 = $('.selection-2')
+	    return $button2.click(() => {
+	      if ($tooltip2.attr('hidden') === 'hidden') {
+	        $tooltip2.removeAttr('hidden')
+	        return $button2.attr('aria-expanded', true)
+	      } else {
+	        $tooltip2.attr('hidden', true)
+	        return $button2.attr('aria-expanded', false)
+	      }
+	    })
+	  })
+	}.call(this))
+</script>
+<script type="text/javascript">
+	(function () {
+	  $(document).ready(function () {
+	    var $button3, $tooltip3
+	    $button3 = $('#picker-3')
+	    $tooltip3 = $('.selection-3')
+	    return $button3.click(() => {
+	      if ($tooltip3.attr('hidden') === 'hidden') {
+	        $tooltip3.removeAttr('hidden')
+	        return $button3.attr('aria-expanded', true)
+	      } else {
+	        $tooltip3.attr('hidden', true)
+	        return $button3.attr('aria-expanded', false)
+	      }
+	    })
+	  })
+	}.call(this))
+</script>
+<script type="text/javascript">
+	(function () {
+	  $(document).ready(function () {
+	    var $button4, $tooltip4
+	    $button4 = $('#picker-4')
+	    $tooltip4 = $('.selection-4')
+	    return $button4.click(() => {
+	      if ($tooltip4.attr('hidden') === 'hidden') {
+	        $tooltip4.removeAttr('hidden')
+	        return $button4.attr('aria-expanded', true)
+	      } else {
+	        $tooltip4.attr('hidden', true)
+	        return $button4.attr('aria-expanded', false)
+	      }
+	    })
+	  })
+	}.call(this))
+</script>
+<script type="text/javascript">
+	(function () {
+	  $(document).ready(function () {
+	    var $button5, $tooltip5
+	    $button5 = $('#picker-5')
+	    $tooltip5 = $('.selection-5')
+	    return $button5.click(() => {
+	      if ($tooltip5.attr('hidden') === 'hidden') {
+	        $tooltip5.removeAttr('hidden')
+	        return $button5.attr('aria-expanded', true)
+	      } else {
+	        $tooltip5.attr('hidden', true)
+	        return $button5.attr('aria-expanded', false)
+	      }
+	    })
+	  })
+	}.call(this))
+</script>
+<script type="text/javascript">
+	(function () {
+	  $(document).ready(function () {
+	    var $button6, $tooltip6
+	    $button6 = $('#picker-6')
+	    $tooltip6 = $('.selection-6')
+	    return $button6.click(() => {
+	      if ($tooltip6.attr('hidden') === 'hidden') {
+	        $tooltip6.removeAttr('hidden')
+	        return $button6.attr('aria-expanded', true)
+	      } else {
+	        $tooltip6.attr('hidden', true)
+	        return $button6.attr('aria-expanded', false)
+	      }
+	    })
+	  })
+	}.call(this))
+</script>
 </body>
 </html>

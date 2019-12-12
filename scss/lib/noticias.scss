@@ -63,3 +63,44 @@
     text-align: center;
   }
 }
+.imgNoticiaBig {
+  height: 40vh;
+  display: block;
+  clear: both;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  img{
+    width:100%;
+  }
+}
+.infoNoticiaBig {
+  h3 {
+    font-family:$roboto;
+    font-size:24px;
+    color:$gris-3;
+    font-weight:500;
+    margin:40px 0 20px;
+  }
+  p {
+    font-family:$roboto;
+    font-size:14px;
+    color:$gris-3;
+    font-weight:300;
+    margin-top:30px;
+  }
+}
+
+@media screen and (max-width:991px){
+	.imgNoticiaBig {
+		height:auto;
+	}
+	.infoNoticiaBig {
+		h3 {
+			font-size:16px;
+		}
+		p {
+			font-size:11px;
+		}
+	}
+}

@@ -1,21 +1,28 @@
 
-/* NAVEGADOR RESPONSIVO */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
-}
+/* MSOTRAR BUSCADOR */
+$('.show-no-cliente').on('click' , function(){
+    $('.contacto').addClass('active animated fadeIn');
+    $('.cliente-uno').removeClass('active');
+    $('.no-cliente-dos').addClass('active animated fadeIn');
+});
 
-/* CIERRE VENTANA BUSQUEDA */
-window.onclick = function(event) {
-  var modal = document.getElementById("buscador-nodal");
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+/* SELECTOR BUSCADOR 1 */
+(function () {
+    $(document).ready(function () {
+      var $button, $tooltip
+      $button = $('#picker-1')
+      $tooltip = $('.selection-1')
+      return $button.click(() => {
+        if ($tooltip.attr('hidden') === 'hidden') {
+          $tooltip.removeAttr('hidden')
+          return $button.attr('aria-expanded', true)
+        } else {
+          $tooltip.attr('hidden', true)
+          return $button.attr('aria-expanded', false)
+        }
+      })
+    })
+}.call(this))
 
 /* SCROLL DE BOTON BUSCADOR */
 function smoothscroll(){
@@ -26,21 +33,14 @@ function smoothscroll(){
     window.scrollTo({ top: 550, behavior: 'smooth' });
   }
 }; 
-
-/* VENTANA DE FORMULARIO DE BUSQUEDA */
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-  document.getElementById("main").style.marginLeft = "250px";
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.body.style.backgroundColor = "white";
-} 
+function smoothscroll2(){
+  if ( $(window).width() < 990) {     
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+  else {
+    window.scrollTo({ top: 550, behavior: 'smooth' });
+  }
+};
 
 /* GALERIA DE FOTOS PORTAL */
 $(document).ready(function(){
@@ -52,29 +52,78 @@ $(document).ready(function(){
     });
 });
 
-/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+
+/* MENU MOBILE */
 function abrirNav() {
   document.getElementById("menu-mobile-izquierda").style.width = "250px";
-  document.getElementById("opacidad").style.opacity = "0.5"; 
-  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  document.getElementById("opacidad").style.visibility = "visible";
+  document.getElementById("opacidad").style.opacity = "1";
+  document.getElementById("opacidad").style.minHeight = "10000px";
+  document.body.style.overflow = "hidden";
 }
 
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
 function cerrarNav() {
   document.getElementById("menu-mobile-izquierda").style.width = "0";
-  document.body.style.backgroundColor = "white";
+  document.getElementById("opacidad").style.visibility = "hidden";
+  document.getElementById("opacidad").style.opacity = "0";
+  document.getElementById("opacidad").style.minHeight = "1px";
+  document.body.style.overflow = "visible"; 
 } 
+
+/* MEGA MENU */
+$(function () {
+  $('.toggle-menu').click(function(){
+    $('.exo-menu').toggleClass('display');
+  });
+});
+
+/* IMAGEN MODAL  */
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+/* TABS INTERIOR */
+function openCity(evt, cityName) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the link that opened the tab
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body
+function abrirNav() {
+  document.getElementById("menu-mobile-izquierda").style.width = "250px";
+
+  document.getElementById("opacidad").style.opacity = "0.5"; 
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+  $('.opacidad').addClass('opacidad-block');
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white 
+function cerrarNav() {
+  document.getElementById("menu-mobile-izquierda").style.width = "0";
+  /*document.body.style.backgroundColor = "white";
+  $('.opacidad').addClass('opacidad-none');
+} */
 
 
    
   
-$(function () {
- $('.toggle-menu').click(function(){
-  $('.exo-menu').toggleClass('display');
-  
- });
- 
-});
 
 
 
@@ -103,7 +152,7 @@ function scroll_header(scroll){
 }*/
 
 /* IMAGEN MODAL */
-
+/*
 $(document).ready(function(){
         var current = {x: 0, y: 0, zoom: 1};
   $(document).on("click","#modal-zoom-photo",function(e){
@@ -148,3 +197,4 @@ $(document).ready(function(){
       
       
     });
+*/

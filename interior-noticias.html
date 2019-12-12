@@ -19,13 +19,26 @@
 </head>
 <body>
 
-<!-- Navegador -->
+<!-- NAVEGADOR --->
+<div id="menu-mobile-izquierda" class="nav-lateral">
+	<a href="javascript:void(0)" class="boton-cerrado" onclick="cerrarNav()">&times;</a>
+	<a href="#">Propiedades</a>
+	<a href="#">Servicios</a>
+	<a href="#">Ayuda</a>
+	<a href="#">otros</a>
+</div>
+
 <div class="content fixed-top">
 	<div class="container-fluid wrapper-padding nav-menu-top">
 		<div class="logo-top">
 			<a class="" href="#"><img class="logo-top-img" src="images/logo-top.png"></a>
 		</div>
-		<a class="d-lg-none" onclick="abrirNav()">open</a>
+		<a class="d-lg-none burger-icon" onclick="abrirNav()">
+			<i class="fa fa-bars"></i>
+		</a>
+		<a class="d-lg-none buscador-icon show-no-cliente no-cliente" onclick="smoothscroll2()">
+			<i class="fa fa-search"></i>
+		</a>
 	 	<ul class="exo-menu">
 			<li><a class="active" href="#">Inicio</a></li>
 			<li class="mega-drop-down"><a href="#">Propiedades</a>
@@ -90,11 +103,58 @@
 		</ul>
 	</div>
 </div>
+<!-- FIN NAVEGADOR --->
+<!-- BUSCADOR -->
+<div id="buscador.nodal" class="formulario-busqueda">
+	<div class="contacto hide">
+		<div id="clientes">
+			<div class="no-cliente-dos hide">
+				<h2 class="medium">Encuentra la <strong class="orange">casa de tus sueños</strong> </h2>
+				<form id="buscador">
+					<div class="form-group">
+						<div class="seleccion">
+							<button id="picker-1" class="boton-seleccion" type="button" aria-haspopup="true" aria-expanded="false">
+								<div class="placeholder-form">TIPO DE PROPIEDAD</div>
+								<div class="seleccion-flecha">
+									<svg viewBox="0 0 18 18" role="presentation" aria-hidden="true" focusable="false" style="height: 12px; width: 12px; display: block; fill: currentcolor;"><path d="m16.29 4.3a1 1 0 1 1 1.41 1.42l-8 8a1 1 0 0 1 -1.41 0l-8-8a1 1 0 1 1 1.41-1.42l7.29 7.29z" fill-rule="evenodd"></path></svg>
+								</div>
+							</button>
+						</div>
+						<div hidden="" class="selection-1">
+							<div class="seleccion-tabs">
+								<div>
+									<a href="#" class="seleccion-item">
+										Santiago
+									</a>
+								</div>
+								<div>
+									<a href="#" class="seleccion-item">
+										Rancagua
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="form-group seleccion">
+						<input placeholder="LUGAR" class="form-control seleccion-comuna placeholder-form" type="text" name="comuna" id="comuna" required style="font-size: 13px !important;"> 
+					</div>
+					<div class="form-group seleccion">
+						<span><a href="busqueda-avanzada.html">Busqueda Avanzada</a></span>
+					</div>
+					<div class="form-group no-cliente text-right button">
+						<button type="submit" class="btn btn-green button" href="#contacto" id="inscribir"  data-loading-text="Enviando...">Buscar</button>
+					</div>
+				</form>
+			</div>	
+		</div>
+	</div>
+</div>
+<!-- FIN DEL BUSCADOR -->
 
-<section class="container-fluid wrapper-padding py-5" style="margin-top:80px;">
+<section class="container-fluid wrapper-padding pt-5" style="margin-top:80px;">
 	<div class="row">
-		<div class="col-12 publicidad" style="margin-bottom: 40px;">
-			<div class="publicidad">
+		<div class="col-12" style="margin-bottom: 40px;">
+			<div class="publicidad publicidad-header">
 				<img src="images/publi-5.jpg">
 			</div>
 		</div>
@@ -105,7 +165,7 @@
 			<div class="infoNoticiaBig">
 				<h3>¿Cómo ha cambiado la plusvalía en departamentos usados?</h3>
 
-				<div class="publicidad">
+				<div class="publicidad publicidad-interior">
 					<img src="images/publi-3.jpg">
 				</div>
 				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
@@ -113,11 +173,24 @@
 
 				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
 				</p>
+				<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+				</p>
 			</div>
 		</div>
 		<div class="col-lg-3">
 			<div class="row">
-				<div class="col-12 blockNoticia">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-12 blockNoticia">
+					<a href="">
+						<div class="imagenNoticia">
+							<img src="images/img-mob.jpg" class="vinculoNoticia">
+						</div>
+						<div class="preNoticia">
+							<h4>¿Cómo ha cambiado la plusvalía en departamentos usados?</h4>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
+						</div>
+					</a>
+				</div>
+				<div class="col-12 col-sm-6 col-md-6 col-lg-12 blockNoticia">
 					<a href="">
 						<div class="imagenNoticia">
 							<img src="images/img-mob.jpg" class="vinculoNoticia">
@@ -137,7 +210,7 @@
 		<div class="col-12 text-center">
 			<h3>Noticias relacionadas</h3>
 		</div>
-		<div class="col-lg-3 blockNoticia">
+		<div class="col-12 col-sm-12 col-md-6 col-lg-3 blockNoticia">
 					<div class="tag-small">Propiedades</div>
 					<a href="">
 						<div class="imagenNoticia">
@@ -149,7 +222,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-3 blockNoticia">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3 blockNoticia">
 					<div class="tag-small">Departamento</div>
 					<a href="">
 						<div class="imagenNoticia">
@@ -161,7 +234,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-3 blockNoticia">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3 blockNoticia">
 					<div class="tag-small">Departamento</div>
 					<a href="">
 						<div class="imagenNoticia">
@@ -173,7 +246,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-lg-3 blockNoticia">
+				<div class="col-12 col-sm-12 col-md-6 col-lg-3 blockNoticia">
 					<div class="tag-small">Departamento</div>
 					<a href="">
 						<div class="imagenNoticia">
@@ -190,7 +263,7 @@
 
 <footer>
 	<div class="row container-fluid wrapper-padding footer">
-		<div class="col-lg-4">
+		<div class="col-12 col-md-4 col-lg-4">
 			<ul class="direccion">
 		 		<li>Av. Italia 1279, Providencia</li>
 		 		<li><strong>Correo:</strong> <a href="mailto:findmyhome@correo.cl">findmyhome@correo.cl</a></li>
@@ -198,7 +271,7 @@
 		 		<li><strong>Celular:</strong> +569 9 1234 5678</li>               
 		 	</ul>
 		</div>
-		<div class="col-lg-4 propiedades-footer">
+		<div class="col-12 col-md-4 col-lg-4 propiedades-footer">
 			<h3>Tipo de Propiedades</h3>
 			<ul>
 				<li><a href="#">Casas</a></li>
@@ -208,7 +281,7 @@
 				<li><a href="#">Home Estudios</a></li>
 			</ul>
 		</div>
-		<div class="col-lg-4">
+		<div class="col-12 col-md-4 col-lg-4">
 			 <div class="footer-img">
 				<img src="images/logo.png">
 			</div>
@@ -222,6 +295,7 @@
 		</nav>
 	</div>
 </footer>
+<div id="opacidad"></div>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
